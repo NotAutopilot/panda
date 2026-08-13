@@ -47,6 +47,10 @@ static int get_health_pkt(void *dat) {
   health->controls_allowed_lateral_pkt = controls_allowed || controls_allowed_lateral;
   health->controls_allowed_longitudinal_pkt = controls_allowed;
 
+  health->steering_control_inhibited_pkt = steering_control_inhibited;
+  health->stock_cc_reengage_counter_pkt = stock_cc_reengage_counter;
+  health->stock_cc_reengage_confirmed_pkt = stock_cc_reengage_confirmed;
+
   return sizeof(*health);
 }
 

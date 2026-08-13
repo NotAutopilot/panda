@@ -29,6 +29,9 @@ struct __attribute__((packed)) health_t {
   uint16_t sound_output_level_pkt;
   uint8_t controls_allowed_lateral_pkt;
   uint8_t controls_allowed_longitudinal_pkt;
+  uint8_t steering_control_inhibited_pkt;
+  uint8_t stock_cc_reengage_counter_pkt;
+  uint8_t stock_cc_reengage_confirmed_pkt;
 };
 
 typedef struct __attribute__((packed)) {

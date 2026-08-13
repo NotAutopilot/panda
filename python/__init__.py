@@ -545,6 +545,9 @@ class Panda:
       "sound_output_level": a[25],
       "controls_allowed_lateral": a[26],
       "controls_allowed_longitudinal": a[27],
+      "steering_control_inhibited": a[28],
+      "stock_cc_reengage_counter": a[29],
+      "stock_cc_reengage_confirmed": a[30],
     }
 
   @ensure_health_packet_version
