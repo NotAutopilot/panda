@@ -250,14 +250,11 @@ static void tick_handler(void) {
       check_registers();
 
       // set ignition_can to false after 2s of no CAN seen
-      if (ignition_can_cnt > 2U) {
-        ignition_can = false;
-      }
+      ignition_can_1hz_tick();
 
       // on to the next one
       uptime_cnt += 1U;
       safety_mode_cnt += 1U;
-      ignition_can_cnt += 1U;
 
       // synchronous safety check
       safety_tick(&current_safety_config);
